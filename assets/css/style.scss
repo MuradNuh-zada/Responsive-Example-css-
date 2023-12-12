@@ -1,0 +1,82 @@
+@import "imports";
+
+/* Title Start */
+.title {
+    margin-top: 50px;
+    h1 {
+        font-size: 60px;
+    }
+}
+/* Title End */
+
+/* Big Text Start */
+.text {
+    font-size: 24.3px;
+    line-height: 1.5;
+    .text-1 {
+        padding: 30px 0;
+    }
+    .text-2 {
+        padding-right: 5px;
+    }
+}
+/* Big Text End */
+
+/* Big Image Start */
+.images {
+    position: relative;
+    height: 315px;
+    width: 314px;
+    .topImage {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+    }
+    .ellipse {
+        position: absolute;
+        z-index: -1;
+        width: 366px;
+        height: 59px;
+        bottom: -27px;
+    }
+}
+/* Big Image End */
+
+.camera {
+    margin-top: 40px;
+
+    /* Little Image Start */
+    .images-2 {
+        position: relative;
+        width: 215px;
+        height: 203px;
+        .topImage-2 {
+            position: absolute;
+            width: 100%;
+        }
+        .ellipse-2 {
+            position: absolute;
+            z-index: -1;
+            bottom: 0;
+            left: 30px;
+            width: 172px;
+            height: 32px;
+        }
+    }
+    /* Little Image End */
+
+    /* Info Start */
+    .info {
+        width: 150px;
+        h2 {
+            font-size: 25px;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+    /* Info End */
+}

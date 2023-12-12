@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-content-end {
+  justify-content: end;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+/* Title Start */
+.title {
+  margin-top: 50px;
+}
+.title h1 {
+  font-size: 60px;
+}
+
+/* Title End */
+/* Big Text Start */
+.text {
+  font-size: 24.3px;
+  line-height: 1.5;
+}
+.text .text-1 {
+  padding: 30px 0;
+}
+.text .text-2 {
+  padding-right: 5px;
+}
+
+/* Big Text End */
+/* Big Image Start */
+.images {
+  position: relative;
+  height: 315px;
+  width: 314px;
+}
+.images .topImage {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.images .ellipse {
+  position: absolute;
+  z-index: -1;
+  width: 366px;
+  height: 59px;
+  bottom: -27px;
+}
+
+/* Big Image End */
+.camera {
+  margin-top: 40px;
+  /* Little Image Start */
+  /* Little Image End */
+  /* Info Start */
+  /* Info End */
+}
+.camera .images-2 {
+  position: relative;
+  width: 215px;
+  height: 203px;
+}
+.camera .images-2 .topImage-2 {
+  position: absolute;
+  width: 100%;
+}
+.camera .images-2 .ellipse-2 {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 30px;
+  width: 172px;
+  height: 32px;
+}
+.camera .info {
+  width: 150px;
+}
+.camera .info h2 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.camera .info p {
+  font-size: 18px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,118 @@
+@import "variables";
+
+.container {
+    width: 85%;
+    max-width: 1140px;
+    margin: 0 auto;
+    .row {
+        display: flex;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: auto;
+        padding: 0 15px;
+    }
+    @for $col from 1 through 12 {
+        .col-#{$col} {
+            width: calc(100% / 12 * $col);
+        }
+    }
+}
+
+@each $size, $width in $screen {
+    @media screen and (min-width: $width) {
+        .container {
+            max-width: map-get($map: $container, $key: $size);
+        }
+        @for $col from 1 through 12 {
+            .col-#{$size}-#{$col} {
+                width: calc(100% / 12 * $col);
+            }
+        }
+    }
+}
+/* Tablet Device Start*/
+@media screen and (max-width: 992px) {
+    .title {
+        h1 {
+            font-size: 32px;
+        }
+    }
+    .text {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .images {
+        width: 181.858px;
+        height: 182.438px;
+        .topImage {
+            width: 100%;
+            height: 100%;
+        }
+        .ellipse {
+            width: 211.975px;
+            height: 34.171px;
+            bottom: -15px;
+        }
+    }
+    .camera {
+        .images-2 {
+            display: none;
+        }
+        .info {
+            width: 90px;
+            h2 {
+                font-size: 15px;
+            }
+            p {
+                font-size: 11px;
+            }
+        }
+    }
+}
+/* Tablet Device End*/
+
+/* Mobile Device Start*/
+@media screen and (max-width: 576px) {
+    .title {
+        h1 {
+            font-size: 26px;
+        }
+    }
+    .text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .images {
+        width: 146.315px;
+        height: 146.781px;
+        .topImage {
+            width: 100%;
+            height: 100%;
+        }
+        .ellipse {
+            width: 170.546px;
+            height: 27.492px;
+            bottom: -15px;
+        }
+    }
+    .camera {
+        .images-2 {
+            display: none;
+        }
+        .info {
+            width: 85px;
+            h2 {
+                font-size: 12px;
+            }
+            p {
+                font-size: 10px;
+            }
+        }
+    }
+}
+/* Mobile Device End*/
