@@ -1,2 +1,3 @@
-# CSS-task-23-SASS-
-CSS task 23 (SASS)
+Responsive example Css & Html
+Site: https://sass-responsive-sand.vercel.app/
+
